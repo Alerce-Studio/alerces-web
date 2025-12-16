@@ -1,0 +1,71 @@
+/* Variables para facilitar cambios de color */
+:root {
+    --bg-color: #2a6a72; /* Color de fondo azul verdoso oscuro */
+    --text-color: #e0e0e0; /* Color del texto gris claro */
+    --logo-color: #79a8ac; /* Color del círculo del logo (simulación) */
+}
+
+/* Estilos generales para el nav */
+.navbar {
+    background-color: var(--bg-color);
+    padding: 15px 50px; /* Espaciado superior/inferior y a los lados */
+    display: flex; /* Para alinear el logo y los enlaces */
+    justify-content: space-between; /* Mueve los enlaces a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    font-family: Arial, sans-serif; /* Fuente similar a la de la imagen */
+}
+
+/* Estilos para la sección del logo/título */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 16px;
+    /* Ajusta el espaciado entre el texto y el grupo de enlaces */
+    margin-right: auto; 
+}
+
+/* Simulación del círculo del logo */
+.logo-circle {
+    width: 35px;
+    height: 35px;
+    background-color: var(--logo-color); 
+    border-radius: 50%; /* Hace que sea un círculo */
+    margin-right: 15px; /* Espacio entre el círculo y el texto */
+    /* Aquí se podría poner la imagen de fondo con CSS si fuera necesario */
+}
+
+/* Estilo para el texto del congreso */
+.congress-title {
+    opacity: 0.9; /* Hace el texto un poco menos brillante, como en la imagen */
+}
+
+/* Estilos para la lista de enlaces */
+.navbar-links {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para que los enlaces estén en línea */
+    gap: 30px; /* Espacio entre cada enlace */
+}
+
+/* Estilos para los elementos de la lista */
+.navbar-links li {
+    margin: 0;
+}
+
+/* Estilos para los enlaces (etiquetas <a>) */
+.navbar-links a {
+    color: var(--text-color);
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 16px;
+    padding: 5px 0; /* Un poco de padding vertical */
+    display: block;
+    opacity: 0.9; /* Hace el texto un poco menos brillante */
+    transition: opacity 0.3s;
+}
+
+/* Efecto al pasar el ratón (opcional) */
+.navbar-links a:hover {
+    opacity: 1; /* Se vuelve totalmente brillante al pasar el ratón */
+}
